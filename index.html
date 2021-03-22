@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a href="" class="navbar-brand">WebDevBlog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Blog</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button
+              class="btn btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Sign in
+            </button>
+            <button class="btn btn-outline-danger ms-3">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label"
+                  >Email</label
+                >
+                <div class="col-sm-10">
+                  <input type="email" id="inputEmail" class="form-control" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPass" class="col-sm-2 col-form-label"
+                  >Password</label
+                >
+                <div class="col-sm-10">
+                  <input type="password" id="inputPass" class="form-control" />
+                </div>
+              </div>
+              <fieldset>
+                <div class="row mb-3">
+                  <legend class="col-form-label col-sm-2">Radio</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="radios"
+                        id="radios1"
+                        value="option1"
+                        checked
+                      />
+                      <label for="radios1" class="form-check-label"
+                        >Radio 1</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="radios"
+                        id="radios2"
+                        value="option2"
+                      />
+                      <label for="radios2" class="form-check-label"
+                        >Radio 2</label
+                      >
+                    </div>
+                    <div class="form-check" disabled>
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="radios"
+                        id="radios3"
+                        value="option3"
+                        disabled
+                      />
+                      <label for="radios3" class="form-check-label"
+                        >Radio 3</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-form-label col-sm-2">Checkbox</div>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        id="gridCheck"
+                        class="form-check-input"
+                      />
+                      <label for="gridCheck" class="form-check-label"
+                        >Save password</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-secondary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-->
+    <main>
+      <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+          </div>
+        </div>
+        <a
+          href="#carouselControls"
+          class="carousel-control-prev"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          href="#carouselControls"
+          class="carousel-control-next"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img
+              src="https://images.pexels.com/photos/4969871/pexels-photo-4969871.jpeg?auto=
+                    compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="col-md-8 col-sm-12 text-center">
+            <h2 class="my-3">About Us</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              ea eveniet cupiditate aliquid debitis aliquam eum, alias
+              voluptates quia eligendi aperiam, nemo eos dignissimos neque dolor
+              modi explicabo consectetur facere odio sint eaque ipsa. Nesciunt
+              porro adipisci sit consequatur inventore a sapiente, rerum vitae
+              maxime earum accusamus excepturi illo nisi.
+            </p>
+          </div>
+        </div>
+        <h2 class="text-center my-5">Lorem ipsum dolor</h2>
+        <div class="row gy-5">
+          <div class="col-md-4 col-sm-6 text-center">
+            <h4>Lorem ipsum</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+              />
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto consequuntur, molestiae nobis earum eum fuga!
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center">
+            <h4>Lorem ipsum</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+              />
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto consequuntur, molestiae nobis earum eum fuga!
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center">
+            <h4>Lorem ipsum</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+              />
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto consequuntur, molestiae nobis earum eum fuga!
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center">
+            <h4>Lorem ipsum</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+              />
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto consequuntur, molestiae nobis earum eum fuga!
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center">
+            <h4>Lorem ipsum</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+              />
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto consequuntur, molestiae nobis earum eum fuga!
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center">
+            <h4>Lorem ipsum</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+              />
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto consequuntur, molestiae nobis earum eum fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p>
+          <a
+            href="#multiCollapse1"
+            data-bs-toggle="collapse"
+            aria-controls="multiCollapse1"
+            role="button"
+            aria-expanded="false"
+            class="btn btn-secondary"
+            >Hello</a
+          >
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-target="#multiCollapse2"
+            aria-expanded="false"
+            aria-controls="multiCollapse2"
+            data-bs-toggle="collapse"
+          >
+            World
+          </button>
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-target=".multi-collapse"
+            aria-expanded="false"
+            aria-controls="multiCollapse2 multiCollapse1"
+            data-bs-toggle="collapse"
+          >
+            Hello World
+          </button>
+        </p>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="collapse multi-collapse show" id="multiCollapse1">
+              <div class="card card-body">
+                <img
+                  class="w-100"
+                  src="https://images.pexels.com/photos/314380/pexels-photo-314380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="collapse multi-collapse show" id="multiCollapse2">
+              <div class="card card-body">
+                <img
+                  class="w-100"
+                  src="https://images.pexels.com/photos/392625/pexels-photo-392625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="collapse multi-collapse show" id="multiCollapse1">
+              <div class="card card-body">
+                <img
+                  class="w-100"
+                  src="https://images.pexels.com/photos/259612/pexels-photo-259612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="collapse multi-collapse show" id="multiCollapse2">
+              <div class="card card-body">
+                <img
+                  class="w-100"
+                  src="https://images.pexels.com/photos/375903/pexels-photo-375903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="text-center w-sm-50 px-5 py-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+          doloremque dolores, itaque ea fuga, quod atque illo nesciunt, delectus
+          aliquid hic placeat eligendi accusantium excepturi fugit? Cupiditate
+          labore iusto, rem necessitatibus inventore, eius consequuntur unde,
+          minus ratione quaerat aliquam minima.
+        </p>
+      </div>
+    </main>
+    <footer class="text-center pt-4 my-md-5 pt-md-5 border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md">
+            <h5>Web dev blog</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md">
+            <h5>Web dev blog</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md">
+            <h5>Web dev blog</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md">
+            <h5>Web dev blog</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+              <li><a href="#" class="link-secondary">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
